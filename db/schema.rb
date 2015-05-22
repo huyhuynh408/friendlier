@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20150522023650) do
   end
 
   create_table "profiles", force: :cascade do |t|
-    t.string   "age"
+    t.integer  "age"
     t.string   "height"
     t.text     "short_bio"
     t.string   "interests"
