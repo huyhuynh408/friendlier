@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  age: MyString
+  height: MyString
+  short_bio: MyString
+  interests: MyString
+  first_quality: MyString
+  second_quaity: MyString
+  third_quality: MyString
+
+two:
+  age: MyString
+  height: MyString
+  short_bio: MyString
+  interests: MyString
+  first_quality: MyString
+  second_quaity: MyString
+  third_quality: MyString
