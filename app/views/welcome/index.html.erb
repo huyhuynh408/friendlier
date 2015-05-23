@@ -8,18 +8,20 @@
 </div>
 
 <div class="index-recent-activity">
+  <p>Recent users</p>
   <% @user.each do |user| %>
     <div>
       <table>
         <tr>
-          <td><%= image_tag("jgl.jpg") %></td>
+          <td><%= link_to(image_tag("jgl.jpg"), user_path(user)) %></td>
           <td>
             <h3><%= user.name %></h3>
-            <%= user.profile.interests %>
+            <p><%= user.profile.short_bio %></p>
+            <p>Interests: <%= user.profile.interests %></p>
           </td>
         </tr>
       </table>
     </div>
-
   <% end %>
+  <div class="border"></div>
 </div>

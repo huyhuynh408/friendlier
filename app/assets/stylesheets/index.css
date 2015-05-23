@@ -18,3 +18,11 @@
   filter: grayscale(77%);
   position: relative;
 }
+
+.index-recent-activity {
+  padding: 5em 15em;
+}
+
+.index-recent-activity .border {
+  border-bottom: 1px solid gray;
+}
