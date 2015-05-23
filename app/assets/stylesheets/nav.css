@@ -1,6 +1,29 @@
-nav {
-  text-align: right;
+.top-bar {
   background-color: #E21C2B;
+  padding: 0 0 4em 13em;
+  height: 120px;
+}
+
+.welcome-text {
+  float: left;
+  color: white;
+}
+
+.welcome-text h1 {
+  font-size: 60px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.welcome-text span {
+  font-size: 60px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+nav {
+  float: right;
+  text-align: right;
   color: white;
   padding: 2em 5em;
   margin: 0;
@@ -17,7 +40,12 @@ nav li {
   padding-bottom: 1em;
 }
 
-a:link, a:visited {
+.top-bar a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.top-bar a:link {
   color: white;
   text-decoration: none;
 }

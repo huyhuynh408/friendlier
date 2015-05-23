@@ -1,17 +1,24 @@
-<nav>
-  <ul>
-    <li><%= link_to("Home", root_path) %></li>
-    <% if logged_in? %>
-      <li>
-        <%= button_to('Log Out', session_path, method: :delete) %>
-      </li>
-    <% else %>
-      <li>
-        <%= link_to("Sign Up", new_user_path) %>
-      </li>
-      <li>
-        <%= link_to("Log In", new_session_path) %>
-      </li>
-    <% end %>
-  </ul>
-</nav>
+<div class="top-bar">
+  <div class="welcome-text">
+    <h1>friend&middot;<span>lier</span></h1>
+    finding your new friend through your old friend
+  </div>
+
+  <nav>
+    <ul>
+      <li><%= link_to("Home", root_path) %></li>
+      <% if logged_in? %>
+        <li>
+          <%= button_to('Log Out', session_path, method: :delete) %>
+        </li>
+      <% else %>
+        <li>
+          <%= link_to("Sign Up", new_user_path) %>
+        </li>
+        <li>
+          <%= link_to("Log In", new_session_path) %>
+        </li>
+      <% end %>
+    </ul>
+  </nav>
+</div>

@@ -1,15 +1,3 @@
-.welcome-text {
-  background-color: #e21c2b;
-  color: white;
-/*  position: absolute;*/
-  width: 100%;
-  padding: 3em 0 4em 13em;
-}
-
-.welcome-text h1 {
-  font-size: 50px;
-}
-
 .welcome-image img {
   /*position: relative;*/
   max-width: 100%;
@@ -18,3 +6,43 @@
   filter: grayscale(77%);
   position: relative;
 }
+
+.index-recent-activity {
+  padding: 5em 15em;
+}
+
+.index-recent-activity .border {
+  border-bottom: 1px solid gray;
+}
+
+.index-recent-activity div:hover {
+    -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  /*background-color: #E21C2B;*/
+  background-color: white;
+  border-bottom: 3px solid #E21C2B;
+/*  border-top: 3px solid #E21C2B;
+*/  -webkit-opacity: 0.80;
+  -moz-opacity: 0.80;
+  opacity: 0.80;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.user-div {
+  width: 214px;
+  display: inline-block;
+}
+
+.user-div:hover .user-blurb {
+  display: inline-block;
+}
+
+.user-blurb {
+  display: none;
+  display: inline;
+}
+
