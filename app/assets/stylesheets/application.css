@@ -17,6 +17,11 @@
 * {
   text-transform: lowercase;
   font-size: 18px;
+  color: #494949;
+}
+
+a:link, a:visited {
+  text-decoration: none;
 }
 
 body {
@@ -25,5 +30,8 @@ body {
 
 footer {
   height: 2em;
-  background-color: #E21C2B;
+  background-color: blue;
+  /*background-color: #E21C2B;*/
+  position: absolute;
+  bottom: 0;
 }

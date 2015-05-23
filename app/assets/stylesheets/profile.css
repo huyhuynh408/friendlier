@@ -1,5 +1,5 @@
 .user-profile {
-  width: 1200px;
+  width: 1000px;
   margin: 100px auto;
 }
 
@@ -36,18 +36,30 @@ input {
 }
 
 input[type=text] {
-  margin-left: 8px;
-  width: 200px;
+  margin-left: 4px;
+  padding: 5px 0;
+  width: 214px;
 }
 
 input[type=submit] {
-  margin-left: 8px;
+  margin-left: 6px;
+  padding: 5px 0;
+  width: 214px;
+  background: transparent;
+  border: 4px solid #E21C2B;
+}
+
+input[type=submit]:hover {
+  background: #E21C2B;
+  border: 4px solid #E21C2B;
+  color: white;
 }
 
 textarea {
-  margin: 0;
-  padding: 0;
-  width: 200px;
+  margin: 0 0 10px 3px;
+  padding: 5px 0;
+  height: 80px;
+  width: 213px;
 }
 
 .flash {
