@@ -9,6 +9,8 @@
 
 .index-recent-activity {
   padding: 5em 15em;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .index-recent-activity .border {
