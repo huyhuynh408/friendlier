@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
   acts_as_messageable
 
   def name
-    return "You should add method :name in your Messageable model"
+    return "Put in the name here"
   end
 
   def mailboxer_email(object)

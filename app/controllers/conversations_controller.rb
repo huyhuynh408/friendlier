@@ -1,19 +1,23 @@
 class ConversationsController < ApplicationController
   # before_action :authenticate_user
+  before_action :get_mailbox
+  before_action :get_conversation
 
   def index
     session[:user_id] = 1
-    @conversations = get_mailbox.inbox
+    @conversations = @mailbox.inbox
   end
 
   def show
-    conversation = Conversations.find_by_id(params[:id])
-    @receipts = conversation.receipts
   end
 
   private
 
   def get_mailbox
-    mailbox ||= current_user.mailbox
+    @mailbox ||= current_user.mailbox
+  end
+
+  def get_conversation
+    @conversation ||= @mailbox.conversations.find_by_id(params[:id])
   end
 end
