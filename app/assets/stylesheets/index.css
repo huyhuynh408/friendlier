@@ -1,5 +1,5 @@
 .welcome-text {
-  background-color: #e21c2b;
+  background-color: #E21C2B;
   color: white;
 /*  position: absolute;*/
   width: 100%;
@@ -25,4 +25,8 @@
 
 .index-recent-activity .border {
   border-bottom: 1px solid gray;
+}
+
+.index-recent-activity tr:hover {
+  background-color: #E21C2B;
 }
