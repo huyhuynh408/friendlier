@@ -2,7 +2,7 @@
 <br>
 <% @conversation.receipts_for(current_user).each do |receipt| %>
   <% message = receipt.message %>
-  <%= message.sender.name %><br>
+  Sender: <%= message.sender.name %><br>
   Time: <%= message.created_at.strftime("%-d %B %Y, %H:%M:%S") %><br>
   Body:<%= message.body %>
 <% end %>
