@@ -1,0 +1,56 @@
+.user-profile {
+  width: 1200px;
+  margin: 100px auto;
+}
+
+.clearfix { overflow: auto; }
+
+.user-name {
+  float: left;
+  padding: 0 auto;
+  text-align: center;
+}
+
+.user-name p {
+  font-size: 40px;
+}
+
+.user-bio {
+  margin: 2em 0;
+  float: right;
+  width: 70%;
+}
+
+.user-profile td {
+  padding: 1em 2em 2em 0;
+}
+
+.user-bio td:nth-child(1) {
+  text-align: right;
+  font-weight: bold;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type=text] {
+  margin-left: 8px;
+  width: 200px;
+}
+
+input[type=submit] {
+  margin-left: 8px;
+}
+
+textarea {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
+
+.flash {
+  display: block;
+  padding-top: 2em;
+}

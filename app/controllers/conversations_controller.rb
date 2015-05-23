@@ -4,7 +4,6 @@ class ConversationsController < ApplicationController
   before_action :get_conversation, only: [:index, :show]
 
   def index
-    session[:user_id] = 1
     @conversations = @mailbox.inbox
   end
 
