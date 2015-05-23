@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
   root 'welcome#index'
 
-  resource :user, only: [:new, :create, :show]
-  resource :session, only: [:new, :create, :destroy]
+  resources :user, only: [:new, :create, :show]
+  resources :profile, only: [:show] do
+    resources :messages, only: [:new, :create]
+  end
+  resources :session, only: [:new, :create, :destroy]
 
-  resources :messages
   resources :conversations, only: [:index, :show, :destroy]
 
   # The priority is based upon order of creation: first created -> highest priority.
