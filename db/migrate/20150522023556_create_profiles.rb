@@ -3,6 +3,7 @@ class CreateProfiles < ActiveRecord::Migration
     create_table :profiles do |t|
       t.integer :age
       t.string :height
+      t.string :gender
       t.text   :short_bio
       t.string :interests
       t.string :first_quality
