@@ -7,7 +7,7 @@
 }
 
 .welcome-text h1 {
-  font-size: 50px;
+  font-size: 60px;
 }
 
 .welcome-image img {
@@ -29,4 +29,12 @@
 
 .index-recent-activity tr:hover {
   background-color: #E21C2B;
+  -webkit-opacity: 0.90;
+  -moz-opacity: 0.90;
+  opacity: 0.90;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
