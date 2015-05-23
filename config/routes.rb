@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   root 'welcome#index'
 
-  resources :user, only: [:new, :create, :show]
-  resources :profile, only: [:show] do
+  resources :users, only: [:new, :create, :show]
+  resources :profiles, only: [:show] do
     resources :messages, only: [:new, :create]
   end
   resources :session, only: [:new, :create, :destroy]
