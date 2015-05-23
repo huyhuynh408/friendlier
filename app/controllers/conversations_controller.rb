@@ -6,6 +6,11 @@ class ConversationsController < ApplicationController
     @conversations = get_mailbox.inbox
   end
 
+  def show
+    conversation = Conversations.find_by_id(params[:id])
+    @receipts = conversation.receipts
+  end
+
   private
 
   def get_mailbox
