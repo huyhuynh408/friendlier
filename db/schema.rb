@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20150522023650) do
   create_table "profiles", force: :cascade do |t|
     t.integer  "age"
     t.string   "height"
+    t.string   "gender"
     t.text     "short_bio"
     t.string   "interests"
     t.string   "first_quality"

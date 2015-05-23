@@ -6,3 +6,20 @@
 <div class="welcome-image">
   <%= image_tag("welcome.png")%>
 </div>
+
+<div class="index-recent-activity">
+  <% @user.each do |user| %>
+    <div>
+      <table>
+        <tr>
+          <td><%= image_tag("jgl.jpg") %></td>
+          <td>
+            <h3><%= user.name %></h3>
+            <%= user.profile.interests %>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  <% end %>
+</div>
