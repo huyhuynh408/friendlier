@@ -5,21 +5,16 @@
 <div class="index-recent-activity">
   <p>Recent users</p>
   <% @user.each do |user| %>
-    <div>
-      <table>
-        <tr>
-          <td><%= link_to(image_tag("jgl.jpg"), user_path(user)) %></td>
-          <td>
-            <h3><%= link_to(user.name , user_path(user)) %></h3>
-            <p><%= user.profile.age %></p>
-            <p><%= user.profile.short_bio %></p>
-            <p>Interests: <%= user.profile.interests %></p>
-          </td>
-        </tr>
-      </table>
+    <div class="user-div">
+      <%= link_to(image_tag("jgl.jpg"), user_path(user)) %>
+      <div class="user-blurb">
+        <h3><%= link_to(user.name , user_path(user)) %>, <%= user.profile.age %></h3>
+        <p><%= user.profile.short_bio %></p>
+        <p>Interests: <%= user.profile.interests %></p>
+      </div>
     </div>
   <% end %>
-  <div class="border"></div>
+  <!-- <div class="border"></div> -->
 </div>
 
 <div></div>
