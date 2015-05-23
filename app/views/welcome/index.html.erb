@@ -8,5 +8,7 @@
 </div>
 
 <div class="index-recent-activity">
-
+  <% @user.each do |user| %>
+    <%= user.name %>
+  <% end %>
 </div>
