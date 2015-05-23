@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  text-transform: lowercase;
+  font-size: 18px;
+}

@@ -1,0 +1,27 @@
+nav {
+  text-align: right;
+  background-color: #e21c2b;
+  color: white;
+  padding: 2em 5em;
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: inline;
+}
+
+nav li {
+  display: inline;
+  margin-left: 1.5em;
+  padding-bottom: 1em;
+}
+
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+nav li:hover {
+  border-bottom: 2px solid white;
+}

@@ -1,0 +1,20 @@
+.welcome-text {
+  background-color: #e21c2b;
+  color: white;
+/*  position: absolute;*/
+  width: 100%;
+  padding: 3em 0 4em 13em;
+}
+
+.welcome-text h1 {
+  font-size: 50px;
+}
+
+.welcome-image img {
+  /*position: relative;*/
+  max-width: 100%;
+  height: auto;
+  -webkit-filter: grayscale(77%);
+  filter: grayscale(77%);
+  position: relative;
+}
