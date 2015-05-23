@@ -1,7 +1,7 @@
 class ConversationsController < ApplicationController
   # before_action :authenticate_user
   before_action :get_mailbox
-  before_action :get_conversation
+  before_action :get_conversation, only: [:index, :show]
 
   def index
     session[:user_id] = 1
