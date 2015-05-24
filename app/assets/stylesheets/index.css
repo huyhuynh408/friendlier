@@ -18,13 +18,11 @@
 }
 
 .index-recent-activity div:hover {
-    -moz-box-sizing: border-box;
-       box-sizing: border-box;
-  /*background-color: #E21C2B;*/
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   background-color: white;
   border-bottom: 4px solid #E21C2B;
-/*  border-top: 3px solid #E21C2B;
-*/  -webkit-opacity: 0.80;
+  -webkit-opacity: 0.80;
   -moz-opacity: 0.80;
   opacity: 0.80;
   -webkit-transition: all 0.5s ease;
