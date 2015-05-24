@@ -33,10 +33,11 @@
 }
 
 .user-div {
+  padding: 0 auto;
   width: 214px;
   display: inline-block;
 }
-
+/*
 .user-div:hover .user-blurb {
   display: inline-block;
 }
@@ -44,5 +45,12 @@
 .user-blurb {
   display: none;
   display: inline;
+}*/
+
+.user-blurb span {
+  font-family: 'Lora', serif;
 }
 
+.user-blurb p {
+  font-size: 20px;
+}

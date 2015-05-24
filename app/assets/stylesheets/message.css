@@ -4,6 +4,10 @@
   padding-left: 20px;
 }
 
+.message-info {
+  font-family: 'Lora', serif;
+}
+
 .conversation-message .message-body {
   margin: 2em 0;
   padding: 15px 10px;

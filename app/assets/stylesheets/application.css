@@ -17,21 +17,20 @@
 * {
   text-transform: lowercase;
   font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
   color: #494949;
 }
 
-a:link, a:visited {
+body a:link, a:visited {
   text-decoration: none;
 }
 
-body {
-  background-color: #FCFCFC;
+body a:hover {
+  color: black;
+  text-transform: uppercase;
 }
 
-footer {
-  height: 2em;
-  background-color: blue;
-  /*background-color: #E21C2B;*/
-  position: absolute;
-  bottom: 0;
+
+body {
+  background-color: #FCFCFC;
 }

@@ -3,6 +3,10 @@
 </div>
 
 <div class="index-recent-activity">
+  <h1>Upcoming Events</h1>
+</div>
+
+<div class="index-recent-activity">
   <h1>Recent users</h1>
   <% @user.each do |user| %>
     <div class="user-div">
@@ -10,11 +14,10 @@
       <div class="user-blurb">
         <h3><%= link_to(user.name , profile_path(user)) %>, <%= user.profile.age %></h3>
         <p><%= user.profile.short_bio %></p>
-        <p>Interests: <%= user.profile.interests %></p>
+        <span>Interests:</span> <br><%= user.profile.interests %>
       </div>
     </div>
   <% end %>
-  <!-- <div class="border"></div> -->
 </div>
 
 <div></div>

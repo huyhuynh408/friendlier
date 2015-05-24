@@ -8,6 +8,7 @@
 .welcome-text {
   float: left;
   color: white;
+  font-family: 'Lora', serif;
 }
 
 .welcome-text h1 {
@@ -46,11 +47,13 @@ nav li {
 .top-bar a:visited {
   color: white;
   text-decoration: none;
+  text-transform: lowercase;
 }
 
 .top-bar a:link {
   color: white;
   text-decoration: none;
+  text-transform: lowercase;
 }
 
 nav li:hover {

@@ -1,7 +1,7 @@
-user1 = User.create!(name: 'Jennifer', email: 'flint@aol.com', friends_email: 'huy2@aol.com', password: 'flint')
-user2 = User.create!(name: 'Kristen', email: 'jackson@aol.com', friends_email: 'huy2@aol.com', password: 'jackson')
+user1 = User.create!(name: 'Jenni', email: 'flint@aol.com', friends_email: 'huy2@aol.com', password: 'flint')
+user2 = User.create!(name: 'Kris', email: 'jackson@aol.com', friends_email: 'huy2@aol.com', password: 'jackson')
 user3 = User.create!(name: 'Tina', email: 'max@aol.com', friends_email: 'huy2@aol.com', password: 'max')
-user4 = User.create!(name: 'Beyonce', email: 'steven@aol.com', friends_email: 'huy2@aol.com', password: 'steven')
+user4 = User.create!(name: 'Kim', email: 'steven@aol.com', friends_email: 'huy2@aol.com', password: 'steven')
 user5 = User.create!(name: 'Paulette', email: 'flint@aol.com', friends_email: 'huy2@aol.com', password: 'flint')
 user6 = User.create!(name: 'Huy', email: 'huy@aol.com', friends_email: 'huy2@aol.com', password: 'huy')
 
@@ -12,7 +12,7 @@ Profile.create!(age: 14, height: "5'10\"", short_bio: "I like stuff", interests:
 Profile.create!(age: 54, height: "6'0\"", short_bio: "One with nature", interests: "Fun, Antiques, Beaches", user_id: 5)
 Profile.create!(age: 19, height: "5'10\"", short_bio: "A regular guy", interests: "Karate, MMA, Hiking", user_id: 6, first_quality: "Nicest guy in the world", second_quaity: "Super awesome", third_quality: "loves portillos")
 
-user1.send_message(user6, "You are a cool guy", "Hi :)")
+user1.send_message(user6, "You are a cool guy", "Hi")
 user2.send_message(user6, "Whats up dude!", "Yolo")
-user3.send_message(user6, "What are you up to?", "Are you that guy?")
-user4.send_message(user6, "Why are the birds at the zoo?", "What is up?")
+user3.send_message(user6, "What are you up to?", "??")
+user4.send_message(user6, "Why are the birds at the zoo?", ":) :)")

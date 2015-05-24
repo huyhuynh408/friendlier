@@ -28,6 +28,7 @@
 .user-bio td:nth-child(1) {
   text-align: right;
   font-weight: bold;
+  font-family: 'Lora', serif;
 }
 
 input {

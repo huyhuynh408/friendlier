@@ -1,11 +1,15 @@
 .inbox {
   margin: 4em auto;
-  width: 1000px;
+  width: 1200px;
 }
 
 .inbox table {
   width: 100%;
   text-align: left;
+}
+
+.inbox th {
+  font-family: 'Lora', serif;
 }
 
 .inbox td, th {
