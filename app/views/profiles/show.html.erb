@@ -1,0 +1,53 @@
+<div class="user-profile clearfix">
+  <div class="user-name">
+    <%= image_tag("jgl.jpg") %>
+    <p><%= @user.name %><p>
+
+    <div>
+      <% if current_user.id == @profile.id %>
+        <%= button_to("edit your profile", root_path) %>
+      <% else %>
+        <h4>Send <%= @user.name %> a message!</h4>
+        <%= form_tag profile_messages_path(@user.id), method: :post do %>
+          <%= text_field_tag 'message[subject]', nil, required: true, placeholder: "Subject" %>
+          <%= text_area_tag 'message[body]', nil, required: true, placeholder: "Body" %>
+          <%= submit_tag 'Send' %>
+        <% end %>
+        <% if flash[:notice] %>
+          <div class="flash"><%= flash[:notice] %></div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+
+  <table class="user-bio">
+    <tr>
+      <td>Bio</td>
+      <td><%= @profile.short_bio %></td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td><%= @profile.age %></td>
+    </tr>
+    <tr>
+      <td>Height</td>
+      <td><%= @profile.height %></td>
+    </tr>
+    <tr>
+      <td>Interests</td>
+      <td><%= @profile.interests %></td>
+    </tr>
+    <tr>
+      <td>First Quality</td>
+      <td><%= @profile.first_quality %></td>
+    </tr>
+    <tr>
+      <td>Second Quality</td>
+      <td><%= @profile.second_quaity %></td>
+    </tr>
+    <tr>
+      <td>Third Quality</td>
+      <td><%= @profile.third_quality %></td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,68 @@
+.user-profile {
+  width: 1000px;
+  margin: 100px auto;
+}
+
+.clearfix { overflow: auto; }
+
+.user-name {
+  float: left;
+  padding: 0 auto;
+  text-align: center;
+}
+
+.user-name p {
+  font-size: 40px;
+}
+
+.user-bio {
+  margin: 2em 0;
+  float: right;
+  width: 70%;
+}
+
+.user-profile td {
+  padding: 1em 2em 2em 0;
+}
+
+.user-bio td:nth-child(1) {
+  text-align: right;
+  font-weight: bold;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type=text] {
+  margin-left: 4px;
+  padding: 5px 0;
+  width: 214px;
+}
+
+input[type=submit] {
+  margin-left: 6px;
+  padding: 5px 0;
+  width: 214px;
+  background: transparent;
+  border: 4px solid #E21C2B;
+}
+
+input[type=submit]:hover {
+  background: #E21C2B;
+  border: 4px solid #E21C2B;
+  color: white;
+}
+
+textarea {
+  margin: 0 0 10px 3px;
+  padding: 5px 0;
+  height: 80px;
+  width: 213px;
+}
+
+.flash {
+  display: block;
+  padding-top: 2em;
+}

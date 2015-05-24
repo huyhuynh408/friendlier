@@ -2,6 +2,10 @@
 
 <ul>
   <% @conversations.each do |conversation| %>
-    <li><%= link_to(conversation.subject, conversation_path(conversation)) %></li>
+    <li>
+      <%= link_to(conversation.subject, conversation_path(conversation)) %>
+      |
+      <%= conversation.receipts_for(current_user).first.is_read ? "Read" : "Unread" %>
+    </li>
   <% end %>
 </ul>
