@@ -5,6 +5,11 @@ class ApplicationController < ActionController::Base
 
   protected
 
+  def unread_count
+    current_user.mailbox.inbox({:read => false}).count
+  end
+  helper_method :unread_count
+
   def current_user
     @_current_user ||= User.find_by_id(session[:user_id])
   end
