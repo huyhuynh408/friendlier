@@ -34,6 +34,7 @@
 
 .user-div {
   padding: 0 auto;
+  padding-bottom: 10px;
   width: 214px;
   display: inline-block;
 }
