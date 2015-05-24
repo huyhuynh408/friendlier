@@ -6,6 +6,10 @@ class User < ActiveRecord::Base
   has_secure_password
   acts_as_messageable
 
+  attr_accessible :image
+  has_attached_file :image, :styles => { :medium => "400x400>", :small => "214x317>" }, :default_url => "/images/:style/missing.png"
+  validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
+
   # def name
   #   return User.name
   # end
