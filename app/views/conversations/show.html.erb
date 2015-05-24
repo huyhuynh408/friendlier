@@ -7,6 +7,11 @@
     <div>
       <%= message.body %>
     </div>
+
+  <% end %>
+  <%= form_tag reply_conversation_path(@conversation), method: :post do %>
+    <%= text_area_tag 'body', nil, placeholder: 'Say something nice...', required: true %>
+    <%= submit_tag("Reply", class: "reply-button")%>
   <% end %>
   <br>
    <%= link_to("back to inbox", conversations_path) %>
