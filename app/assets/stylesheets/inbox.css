@@ -1,0 +1,25 @@
+.inbox {
+  margin: 4em auto;
+  width: 1000px;
+}
+
+.inbox table {
+  width: 100%;
+  text-align: left;
+}
+
+.inbox td, th {
+  padding: 1em 1em;
+}
+
+.inbox tr:nth-child(even) {
+  background-color: #DEDEDE;
+}
+
+.inbox th:first-child {
+  width: 170px;
+}
+
+.inbox th:last-child {
+  width: 60px;
+}
