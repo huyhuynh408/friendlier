@@ -6,9 +6,9 @@
   <p>Recent users</p>
   <% @user.each do |user| %>
     <div class="user-div">
-      <%= link_to(image_tag("jgl.jpg"), user_path(user)) %>
+      <%= link_to(image_tag("jgl.jpg"), profile_path(user)) %>
       <div class="user-blurb">
-        <h3><%= link_to(user.name , user_path(user)) %>, <%= user.profile.age %></h3>
+        <h3><%= link_to(user.name , profile_path(user)) %>, <%= user.profile.age %></h3>
         <p><%= user.profile.short_bio %></p>
         <p>Interests: <%= user.profile.interests %></p>
       </div>

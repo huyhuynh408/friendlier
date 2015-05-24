@@ -1,0 +1,9 @@
+<h1>Send a message!</h1>
+
+<%= form_tag profile_messages_path, method: :post do %>
+  <%= label_tag 'message[subject]', 'Subject' %>
+  <%= text_field_tag 'message[subject]', nil, required: true %>
+  <%= label_tag 'message[body]', 'Message' %>
+  <%= text_area_tag 'message[body]', nil, required: true %>
+  <%= submit_tag 'Send' %>
+<% end %>
