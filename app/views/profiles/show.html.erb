@@ -1,11 +1,12 @@
 <div class="user-profile clearfix">
   <div class="user-name">
     <%= image_tag("jgl.jpg") %>
+    <%= image_tag(@profile.image.url(:small)) %>
     <p><%= @user.name %><p>
 
     <div>
       <% if current_user.id == @profile.id %>
-        <%= button_to("edit your profile", root_path) %>
+        <%= button_to("edit your profile", edit_profile_path(current_user), method: :get) %>
       <% else %>
         <h4>Send <%= @user.name %> a message!</h4>
         <%= form_tag profile_messages_path(@user.id), method: :post do %>
