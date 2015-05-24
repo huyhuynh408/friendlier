@@ -1,0 +1,12 @@
+.conversation-message {
+  width: 800px;
+  margin: 4em auto;
+  padding-left: 20px;
+}
+
+.conversation-message div {
+  margin-top: 2em;
+  padding: 15px 0;
+  height: 150px;
+  background-color: #DEDEDE;
+}

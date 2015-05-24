@@ -1,8 +1,13 @@
-<%= @conversation.subject %>
-<br>
-<% @conversation.receipts_for(current_user).each do |receipt| %>
-  <% message = receipt.message %>
-  Sender: <%= message.sender.name %><br>
-  Time: <%= distance_of_time_in_words(Time.now, message.created_at) %> ago<br>
-  Body:<%= message.body %>
-<% end %>
+<div class="conversation-message">
+  <h1><%= @conversation.subject %></h1>
+  <% @conversation.receipts_for(current_user).each do |receipt| %>
+    <% message = receipt.message %>
+    From: <%= link_to(message.sender.name, profile_path(message.sender)) %><br>
+    When: <%= distance_of_time_in_words(Time.now, message.created_at) %> ago
+    <div>
+      <%= message.body %>
+    </div>
+  <% end %>
+  <br>
+   <%= link_to("back to inbox", conversations_path) %>
+</div>
