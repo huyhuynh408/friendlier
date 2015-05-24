@@ -44,3 +44,4 @@ group :development, :test do
 end
 
 gem 'mailboxer'
+gem "paperclip", "~> 4.2"

@@ -10,7 +10,7 @@
   <h1>Recent users</h1>
   <% @user.each do |user| %>
     <div class="user-div">
-      <%= link_to(image_tag("jgl.jpg"), profile_path(user)) %>
+      <%= render partial: 'profilepic', locals: {profile: user.profile} %>
       <div class="user-blurb">
         <h3><%= link_to(user.name , profile_path(user)) %>, <%= user.profile.age %></h3>
         <p><%= user.profile.short_bio %></p>
@@ -20,4 +20,3 @@
   <% end %>
 </div>
 
-<div></div>

@@ -1,4 +1,4 @@
-user1 = User.create!(name: 'Jenni', email: 'flint@aol.com', friends_email: 'huy2@aol.com', password: 'flint')
+user1 = User.create!(name: 'Laina', email: 'flint@aol.com', friends_email: 'huy2@aol.com', password: 'flint')
 user2 = User.create!(name: 'Kris', email: 'jackson@aol.com', friends_email: 'huy2@aol.com', password: 'jackson')
 user3 = User.create!(name: 'Tina', email: 'max@aol.com', friends_email: 'huy2@aol.com', password: 'max')
 user4 = User.create!(name: 'Kim', email: 'steven@aol.com', friends_email: 'huy2@aol.com', password: 'steven')

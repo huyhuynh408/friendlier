@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   resources :users, only: [:new, :create, :show]
-  resources :profiles, only: [:show] do
+  resources :profiles, only: [:show, :edit, :update] do
     resources :messages, only: [:new, :create]
   end
   resources :session, only: [:new, :create, :destroy]
