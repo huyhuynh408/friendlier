@@ -10,7 +10,7 @@ Profile.create!(age: 28, height: "5'4\"", short_bio: "I am an active woman", int
 Profile.create!(age: 38, height: "5'2\"", short_bio: "A whirlwind of energy", interests: "Music, Arts, Poems", user_id: 3)
 Profile.create!(age: 14, height: "5'10\"", short_bio: "I like stuff", interests: "Money, Cars, Watches", user_id: 4)
 Profile.create!(age: 54, height: "6'0\"", short_bio: "One with nature", interests: "Fun, Antiques, Beaches", user_id: 5)
-Profile.create!(age: 19, height: "5'10\"", short_bio: "A regular guy", interests: "Karate, MMA, Hiking", user_id: 6, first_quality: "Nicest guy in the world", second_quaity: "Super awesome", third_quality: "Humble")
+Profile.create!(age: 19, height: "5'10\"", short_bio: "A regular guy", interests: "Karate, MMA, Hiking", user_id: 6, first_quality: "Nicest guy in the world", second_quaity: "Super awesome", third_quality: "loves portillos")
 
 user1.send_message(user6, "You are a cool guy", "Hi :)")
 user2.send_message(user6, "Whats up dude!", "Yolo")
