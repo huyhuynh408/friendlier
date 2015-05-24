@@ -3,7 +3,7 @@
 </div>
 
 <div class="index-recent-activity">
-  <p>Recent users</p>
+  <h1>Recent users</h1>
   <% @user.each do |user| %>
     <div class="user-div">
       <%= link_to(image_tag("jgl.jpg"), profile_path(user)) %>
