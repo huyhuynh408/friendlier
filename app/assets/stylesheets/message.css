@@ -1,0 +1,27 @@
+.conversation-message {
+  width: 800px;
+  margin: 4em auto;
+  padding-left: 20px;
+}
+
+.conversation-message .message-body {
+  margin: 2em 0;
+  padding: 15px 10px;
+  height: 150px;
+  background-color: #DEDEDE;
+}
+
+.conversation-message .user-body {
+  background-color: white;
+  border: 3px solid #DEDEDE;
+}
+
+.conversation-message .reply-button {
+  margin: 15px 0 0 0;
+}
+
+.conversation-message textarea {
+  margin: 35px 0 0 0;
+  width: 300px;
+  height: 120px;
+}
