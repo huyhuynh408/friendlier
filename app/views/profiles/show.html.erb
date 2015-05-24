@@ -1,7 +1,6 @@
 <div class="user-profile clearfix">
   <div class="user-name">
-    <%= image_tag("jgl.jpg") %>
-    <%= image_tag(@profile.image.url(:small)) %>
+    <%= render partial: 'profilepic', locals: {profile: @profile} %>
     <p><%= @user.name %><p>
 
     <div>
