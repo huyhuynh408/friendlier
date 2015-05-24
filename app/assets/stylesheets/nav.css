@@ -2,6 +2,7 @@
   background-color: #E21C2B;
   padding: 0 0 4em 13em;
   height: 120px;
+  color: white;
 }
 
 .welcome-text {
@@ -53,5 +54,5 @@ nav li {
 }
 
 nav li:hover {
-  border-bottom: 2px solid white;
+  border-bottom: 3px solid white;
 }

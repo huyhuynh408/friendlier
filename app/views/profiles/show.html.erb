@@ -4,14 +4,18 @@
     <p><%= @user.name %><p>
 
     <div>
-      <h4>Send <%= @user.name %> a message!</h4>
-      <%= form_tag profile_messages_path(@user.id), method: :post do %>
-        <%= text_field_tag 'message[subject]', nil, required: true, placeholder: "Subject" %>
-        <%= text_area_tag 'message[body]', nil, required: true, placeholder: "Body" %>
-        <%= submit_tag 'Send' %>
-      <% end %>
-      <% if flash[:notice] %>
-        <div class="flash"><%= flash[:notice] %></div>
+      <% if current_user.id == @profile.id %>
+        <%= button_to("edit your profile", root_path) %>
+      <% else %>
+        <h4>Send <%= @user.name %> a message!</h4>
+        <%= form_tag profile_messages_path(@user.id), method: :post do %>
+          <%= text_field_tag 'message[subject]', nil, required: true, placeholder: "Subject" %>
+          <%= text_area_tag 'message[body]', nil, required: true, placeholder: "Body" %>
+          <%= submit_tag 'Send' %>
+        <% end %>
+        <% if flash[:notice] %>
+          <div class="flash"><%= flash[:notice] %></div>
+        <% end %>
       <% end %>
     </div>
   </div>
@@ -39,7 +43,7 @@
     </tr>
     <tr>
       <td>Second Quality</td>
-      <td><%= @profile.third_quality %></td>
+      <td><%= @profile.second_quaity %></td>
     </tr>
     <tr>
       <td>Third Quality</td>

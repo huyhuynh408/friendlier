@@ -9,10 +9,13 @@
       <li><%= link_to("Home", root_path) %></li>
       <% if logged_in? %>
         <li>
-          <%= link_to("Inbox", conversations_path) %>(<%= unread_count %>)
+          <%= link_to("Profile", profile_path(current_user)) %>
         </li>
         <li>
-          <%= button_to('Log Out', session_path(current_user), method: :delete) %>
+          <%= link_to("Inbox &rsaquo; #{unread_count}".html_safe, conversations_path) %>
+        </li>
+        <li>
+          <%= link_to("logout", logout_path, method: :delete) %>
         </li>
       <% else %>
         <li>

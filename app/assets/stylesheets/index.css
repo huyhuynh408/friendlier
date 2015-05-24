@@ -8,7 +8,7 @@
 }
 
 .index-recent-activity {
-  padding: 5em 15em;
+  padding: 7em 0;
   width: 1200px;
   margin: 0 auto;
 }
@@ -22,7 +22,7 @@
        box-sizing: border-box;
   /*background-color: #E21C2B;*/
   background-color: white;
-  border-bottom: 3px solid #E21C2B;
+  border-bottom: 4px solid #E21C2B;
 /*  border-top: 3px solid #E21C2B;
 */  -webkit-opacity: 0.80;
   -moz-opacity: 0.80;
