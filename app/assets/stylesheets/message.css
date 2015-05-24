@@ -4,11 +4,16 @@
   padding-left: 20px;
 }
 
-.conversation-message div {
-  margin-top: 2em;
-  padding: 15px 0;
+.conversation-message .message-body {
+  margin: 2em 0;
+  padding: 15px 10px;
   height: 150px;
   background-color: #DEDEDE;
+}
+
+.conversation-message .user-body {
+  background-color: white;
+  border: 3px solid #DEDEDE;
 }
 
 .conversation-message .reply-button {
