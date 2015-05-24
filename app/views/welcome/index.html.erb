@@ -3,7 +3,10 @@
 </div>
 
 <div class="index-recent-activity">
-  <h1>Upcoming Events</h1>
+  <h1>Your last message</h1>
+  <h2><%= link_to(@conversation.subject, conversation_path(@conversation)) %></h2>
+  <p class="index-message"><%= @conversation.receipts.first.message.body %></p>
+  <p>from <%= link_to(@conversation.receipts.first.message.sender.name, profile_path(@conversation.receipts.first.message.sender)) %> <%= distance_of_time_in_words(Time.now, @conversation.receipts.first.message.created_at) %> ago</p>
 </div>
 
 <div class="index-recent-activity">
@@ -20,3 +23,6 @@
   <% end %>
 </div>
 
+<div class="index-recent-activity">
+  <h1>Upcoming Events</h1>
+</div>

@@ -12,7 +12,7 @@ Profile.create!(age: 14, height: "5'10\"", short_bio: "I like stuff", interests:
 Profile.create!(age: 54, height: "6'0\"", short_bio: "One with nature", interests: "Fun, Antiques, Beaches", user_id: 5)
 Profile.create!(age: 19, height: "5'10\"", short_bio: "A regular guy", interests: "Karate, MMA, Hiking", user_id: 6, first_quality: "Nicest guy in the world", second_quaity: "Super awesome", third_quality: "loves portillos")
 
-user1.send_message(user6, "You are a cool guy", "Hi")
 user2.send_message(user6, "Whats up dude!", "Yolo")
 user3.send_message(user6, "What are you up to?", "??")
 user4.send_message(user6, "Why are the birds at the zoo?", ":) :)")
+user1.send_message(user6, "You are a cool guy", "Hi")

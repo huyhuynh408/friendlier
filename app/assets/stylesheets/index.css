@@ -8,13 +8,22 @@
 }
 
 .index-recent-activity {
-  padding: 7em 0;
+  padding: 3em 0 0 0 ;
   width: 1200px;
   margin: 0 auto;
 }
 
 .index-recent-activity .border {
   border-bottom: 1px solid gray;
+}
+
+h2 a {
+  font-size: 30px;
+  font-family: 'Lora', serif;
+}
+
+.index-message {
+  font-size: 26px;
 }
 
 .index-recent-activity div:hover {

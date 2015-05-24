@@ -67,3 +67,8 @@ textarea {
   display: block;
   padding-top: 2em;
 }
+
+.edit-image {
+  width: 1000px;
+  margin: 3em auto;
+}

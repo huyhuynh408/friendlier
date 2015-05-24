@@ -1,7 +1,9 @@
-<h1>Edit your profile</h1>
+<div class="edit-image">
+  <h1>Edit your profile</h1>
 
-<%= form_for @profile, method: :put, html: { :multipart => true } do |form| %>
-  Upload your image:
-  <%= form.file_field :image %>
-  <%= form.submit %>
-<% end %>
+  <%= form_for @profile, method: :put, html: { :multipart => true } do |form| %>
+    Upload your image:
+    <%= form.file_field :image %>
+    <%= form.submit %>
+  <% end %>
+</div>
