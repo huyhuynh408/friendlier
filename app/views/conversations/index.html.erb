@@ -11,7 +11,7 @@
     <% @conversations.each do |conversation| %>
     <tr>
       <td>
-        <%= distance_of_time_in_words(Time.now, conversation.receipts.first.created_at) %> ago
+        <%= distance_of_time_in_words(Time.now, conversation.receipts.last.created_at) %> ago
       </td>
       <td>
         <%= link_to(conversation.subject, conversation_path(conversation)) %>

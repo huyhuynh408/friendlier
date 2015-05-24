@@ -30,10 +30,11 @@ h2 a {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: white;
+  color: black;
   border-bottom: 4px solid #E21C2B;
-  -webkit-opacity: 0.80;
-  -moz-opacity: 0.80;
-  opacity: 0.80;
+  -webkit-opacity: 0.70;
+  -moz-opacity: 0.70;
+  opacity: 0.70;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
