@@ -11,7 +11,6 @@ class ProfilesController < ApplicationController
   def update
     @profile = Profile.find_by_id(params[:id])
     @profile.update(user_params)
-    binding.pry
     redirect_to(profile_path(@profile))
   end
 
