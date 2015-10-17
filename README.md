@@ -23,5 +23,3 @@ Each user has a profile where they can upload their image and your friend can wr
 Users can receive and send messages from any user.  Messages can be seen in your inbox and each conversation is viewed on the same page.
 
 ![message](public/message.png)
-
-
